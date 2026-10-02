@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Urinalysis Report - <%= patient.patientId %></title>
+</head>
+<body>
+  <a href="/">&larr; Back to patient list</a>
+  <h1>Urinalysis Report</h1>
+  <p>
+    <strong>Patient:</strong> <%= patient.name %> (<%= patient.patientId %>)<br>
+    <strong>Timestamp:</strong> <%= patient.timestamp %>
+  </p>
+
+  <table border="1">
+    <tr>
+      <th>Analyte</th>
+      <th>Value</th>
+      <th>Status</th>
+    </tr>
+    <% flaggedReport.forEach(function(row) { %>
+      <tr>
+        <td><%= row.analyte %></td>
+        <td><%= row.value %></td>
+        <td><%= row.status %></td>
+      </tr>
+    <% }); %>
+  </table>
+
+  <p><em>Decision support only - results must be confirmed by a qualified clinician.</em></p>
+</body>
+</html>

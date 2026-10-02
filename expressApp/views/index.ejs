@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Urine Strip Reader - Patient List</title>
+</head>
+<body>
+  <h1>Urine Test Strip Reader - Point-of-Care Dashboard</h1>
+
+  <h2>Patients</h2>
+  <ul class="patient-list">
+    <% patients.forEach(function(patient) { %>
+      <li>
+        <strong><%= patient.name %></strong> (<%= patient.patientId %>)
+        - tested on <%= patient.timestamp %>
+        <br>
+        <a href="/patients/<%= patient.patientId %>">View full report</a>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>

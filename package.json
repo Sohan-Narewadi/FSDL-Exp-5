@@ -1,0 +1,20 @@
+{
+  "name": "urine-strip-reader-expt5",
+  "version": "1.0.0",
+  "description": "Experiment 5 - Node.js and Express.js basics, demonstrated using the Urine Test Strip Reader (Point-of-Care Colorimetry) use case",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "expressApp/server.js",
+  "scripts": {
+    "http-server": "node 1_http_basic_server.js",
+    "file-sync": "node 2_file_sync.js",
+    "file-async": "node 3_file_async.js",
+    "custom-module": "node 4_custom_module_demo.js",
+    "start": "node expressApp/server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.22.3"
+  }
+}

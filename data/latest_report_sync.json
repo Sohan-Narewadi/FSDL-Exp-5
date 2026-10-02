@@ -1,0 +1,9 @@
+{
+  "patientId": "KJS-P003",
+  "timestamp": "2026-10-02T14:12:06.115Z",
+  "analytes": {
+    "Glucose": 100,
+    "Protein": 15,
+    "pH": 6.5
+  }
+}

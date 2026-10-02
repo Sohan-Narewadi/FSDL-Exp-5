@@ -1,0 +1,12 @@
+{
+  "patientId": "KJS-P001",
+  "name": "benjamin netanyahu",
+  "timestamp": "2026-09-27T10:15:00",
+  "analytes": {
+    "Glucose": 100,
+    "Protein": 10,
+    "pH": 6,
+    "Ketones": 5,
+    "Blood": 0
+  }
+}

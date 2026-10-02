@@ -1,0 +1,12 @@
+{
+  "patientId": "KJS-P002",
+  "name": "Radhesh Nair",
+  "timestamp": "2026-09-27T11:40:00",
+  "analytes": {
+    "Glucose": 250,
+    "Protein": 1000,
+    "pH": 8.5,
+    "Ketones": 40,
+    "Blood": 10
+  }
+}

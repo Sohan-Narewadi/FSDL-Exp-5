@@ -1,0 +1,26 @@
+[
+  {
+    "patientId": "KJS-P001",
+    "name": "benjamin netanyahu",
+    "timestamp": "2026-09-27T10:15:00",
+    "analytes": {
+      "Glucose": 100,
+      "Protein": 10,
+      "pH": 6.0,
+      "Ketones": 5,
+      "Blood": 0
+    }
+  },
+  {
+    "patientId": "KJS-P002",
+    "name": "Radhesh Nair",
+    "timestamp": "2026-09-27T11:40:00",
+    "analytes": {
+      "Glucose": 250,
+      "Protein": 1000,
+      "pH": 8.5,
+      "Ketones": 40,
+      "Blood": 10
+    }
+  }
+]

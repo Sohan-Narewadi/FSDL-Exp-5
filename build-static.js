@@ -1,4 +1,4 @@
-// Pre-renders the Express/EJS app into plain HTML in /docs so it can be hosted on GitHub Pages.
+// Pre-renders the Express/EJS app into plain HTML in the repo root so it can be hosted on GitHub Pages.
 const ejs = require("ejs");
 const fs = require("fs");
 const path = require("path");
@@ -6,7 +6,7 @@ const analyteMath = require("./customModules/analyteMath");
 
 const patients = JSON.parse(fs.readFileSync("data/patients.json", "utf-8"));
 const views = path.join(__dirname, "expressApp", "views");
-const out = path.join(__dirname, "docs");
+const out = __dirname;
 
 const write = (file, content) => {
   const f = path.join(out, file);
@@ -32,4 +32,4 @@ for (const patient of patients) {
 
 fs.copyFileSync("expressApp/public/device-photo.jpeg", path.join(out, "device-photo.jpeg"));
 write(".nojekyll", "");
-console.log("Static site written to docs/");
+console.log("Static site written to the repo root");

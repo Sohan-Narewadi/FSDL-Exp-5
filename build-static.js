@@ -14,10 +14,6 @@ const write = (file, content) => {
   fs.writeFileSync(f, content);
 };
 
-const banner = (prefix) => `
-  <p style="background:#eef;padding:8px"><em>Static GitHub Pages build of the Express + EJS app (Experiment 5).
-  Source: <code>expressApp/server.js</code>.</em></p>`;
-
 let index = ejs.render(fs.readFileSync(path.join(views, "index.ejs"), "utf-8"), { patients });
 index = index.replace(/href="\/patients\/([^"]+)"/g, 'href="patients/$1.html"').replace("<h1>", banner("") + "<h1>");
 write("index.html", index);

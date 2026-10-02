@@ -15,7 +15,7 @@ const write = (file, content) => {
 };
 
 let index = ejs.render(fs.readFileSync(path.join(views, "index.ejs"), "utf-8"), { patients });
-index = index.replace(/href="\/patients\/([^"]+)"/g, 'href="patients/$1.html"').replace("<h1>", banner("") + "<h1>");
+index = index.replace(/href="\/patients\/([^"]+)"/g, 'href="patients/$1.html"');
 write("index.html", index);
 
 for (const patient of patients) {
